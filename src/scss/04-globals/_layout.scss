@@ -1,0 +1,11 @@
+@use "./../01-abstracts/" as *;
+
+.wrapper {
+  padding: 81px 27px 37px 28px;
+
+  @include breakpoint($md) {
+    padding-top: 80px;
+    padding-bottom: 49px;
+  }
+}
+
