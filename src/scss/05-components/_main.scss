@@ -1,0 +1,32 @@
+@use "./../01-abstracts/" as *;
+
+.main {
+  margin-bottom: 120px;
+  text-align: center;
+  @include breakpoint($md) {
+    margin-bottom: 72px;
+  }
+
+  &__title {
+    font-size: rem(22px);
+    line-height: rem(32px);
+    color: $gray;
+    margin-bottom: 15px;
+    @include breakpoint($md) {
+      font-size: rem(48px);
+      line-height: rem(60px);
+      margin-bottom: 16px;
+    }
+  }
+
+  &__subtitle {
+    font-size: rem(12px);
+    line-height: rem(15px);
+    margin-bottom: 32px;
+    @include breakpoint($md) {
+      font-size: rem(20px);
+      line-height: rem(24px);
+      margin-bottom: 40px;
+    }
+  }
+}

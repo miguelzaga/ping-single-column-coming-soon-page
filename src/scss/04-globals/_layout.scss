@@ -9,3 +9,11 @@
   }
 }
 
+.header {
+  max-width: 56px;
+  margin: 0 auto 32px;
+  @include breakpoint($md) {
+    max-width: 90px;
+    margin-bottom: 40px;
+  }
+}
