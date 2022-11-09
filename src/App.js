@@ -14,6 +14,17 @@ function App() {
         <p className="main__subtitle">
           Subscribe and get notified Notify Me &copy;
         </p>
+        <form noValidate className="main__form form">
+          <input
+            className="form__input"
+            type="email"
+            required
+            placeholder="Your email adress..."
+          />
+          <button className="form__btn" type="submit">
+            Notify Me
+          </button>
+        </form>
       </main>
       <footer className="footer">Copyright Ping. All rights reserved.</footer>
     </div>

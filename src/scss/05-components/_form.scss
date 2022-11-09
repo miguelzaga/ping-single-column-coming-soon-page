@@ -1,0 +1,8 @@
+@use "./../01-abstracts/" as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 72px;
+}
