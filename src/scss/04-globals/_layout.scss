@@ -17,3 +17,21 @@
     margin-bottom: 40px;
   }
 }
+
+.footer {
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    color: $blue;
+    margin-bottom: 27px;
+    &-li {
+      width: 32px;
+      height: 31px;
+      border: 1px solid $light-blue;
+      border-radius: 100%;
+      display: flex;
+      padding: 7px;
+    }
+  }
+}
