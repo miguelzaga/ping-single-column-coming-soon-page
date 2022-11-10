@@ -63,7 +63,9 @@ function App() {
             </svg>
           </li>
         </ul>
-        Copyright Ping. All rights reserved.
+        <p className="footer__rights">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
       </footer>
     </div>
   );
