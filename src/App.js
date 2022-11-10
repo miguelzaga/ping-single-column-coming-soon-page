@@ -1,5 +1,6 @@
 import { useState } from "react";
 import logo from "/src/images/logo.svg";
+import illustration from "/src/images/illustration-dashboard.png";
 
 function App() {
   return (
@@ -25,8 +26,20 @@ function App() {
             Notify Me
           </button>
         </form>
+        <img
+          className="main__illustration"
+          alt="dashboard illustration"
+          src={illustration}
+        />
       </main>
-      <footer className="footer">Copyright Ping. All rights reserved.</footer>
+      <footer className="footer">
+        <ul className="footer__socials">
+          <li className="footer__socials-li"></li>
+          <li className="footer__socials-li"></li>
+          <li className="footer__socials-li"></li>
+        </ul>
+        Copyright Ping. All rights reserved.
+      </footer>
     </div>
   );
 }
