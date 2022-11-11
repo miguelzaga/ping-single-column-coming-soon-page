@@ -28,13 +28,19 @@
     @include breakpoint($md) {
       margin-bottom: 25px;
     }
-    &-li {
+    &-a {
+      color: $blue;
       width: 32px;
       height: 31px;
       border: 1px solid $light-blue;
       border-radius: 100%;
       display: flex;
       padding: 7px;
+      transition: 0.2s ease-in;
+      &:hover {
+        color: white;
+        background-color: $blue;
+      }
     }
   }
   &__rights {
