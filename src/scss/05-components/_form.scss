@@ -5,6 +5,11 @@
   flex-direction: column;
   gap: 10px;
   margin-bottom: 40px;
+  @include breakpoint($md) {
+    flex-direction: row;
+    margin-bottom: 94px;
+    gap: 14px;
+  }
 
   &__input {
     box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.0001);
@@ -14,8 +19,13 @@
     font-weight: 300;
     font-size: rem(12px);
     line-height: rem(20px);
+    width: 100%;
     &::placeholder {
       color: $light-blue;
+    }
+    @include breakpoint($md) {
+      font-size: rem(16px);
+      padding: 14px 30px;
     }
   }
 
@@ -30,5 +40,10 @@
     font-weight: 600;
     font-size: rem(12px);
     line-height: rem(16px);
+    min-width: 200px;
+    @include breakpoint($md) {
+      font-size: rem(16px);
+      padding: 14px 30px;
+    }
   }
 }

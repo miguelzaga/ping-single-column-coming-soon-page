@@ -25,6 +25,9 @@
     gap: 12px;
     color: $blue;
     margin-bottom: 27px;
+    @include breakpoint($md) {
+      margin-bottom: 25px;
+    }
     &-li {
       width: 32px;
       height: 31px;
@@ -39,5 +42,9 @@
     line-height: rem(12px);
     color: $gray;
     text-align: center;
+    @include breakpoint($md) {
+      font-size: rem(12px);
+      line-height: rem(15px);
+    }
   }
 }
