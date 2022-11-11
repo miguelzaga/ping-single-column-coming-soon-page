@@ -14,13 +14,29 @@ function App() {
           We are launching <b className="bold">soon!</b>
         </h1>
         <p className="main__subtitle">Subscribe and get notified</p>
-        <form noValidate className="main__form form">
-          <input
-            className="form__input"
-            type="email"
-            required
-            placeholder="Your email adress..."
-          />
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (e.target.checkValidity()) {
+              alert("Success");
+            } else {
+              alert("Invalid form");
+            }
+          }}
+          noValidate
+          className="main__form form"
+        >
+          <div className="form__input-container">
+            <input
+              className="form__input"
+              type="email"
+              required
+              placeholder="Your email adress..."
+            />
+            <p className="form__input-error">
+              Please provide a valid email address
+            </p>
+          </div>
           <button className="form__btn" type="submit">
             Notify Me
           </button>

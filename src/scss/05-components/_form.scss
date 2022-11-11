@@ -10,8 +10,10 @@
     margin-bottom: 94px;
     gap: 14px;
   }
-
   &__input {
+    &-container {
+      width: 100%;
+    }
     box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.0001);
     border-radius: 28px;
     border: solid 1px $light-blue;
@@ -22,6 +24,31 @@
     width: 100%;
     &::placeholder {
       color: $light-blue;
+    }
+    &-error {
+      display: none;
+      margin-top: 2px;
+      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: rem(10px);
+      line-height: rem(20px);
+      color: $red;
+      font-style: italic;
+      padding: 0 30px;
+      @include breakpoint($md) {
+        margin-top: 6px;
+        text-align: left;
+        font-size: rem(12px);
+      }
+    }
+    &:focus:invalid {
+      outline-color: $red;
+      & + p {
+        display: block;
+      }
+    }
+    &:focus:valid {
+      outline-color: $light-blue;
     }
     @include breakpoint($md) {
       font-size: rem(16px);
@@ -49,6 +76,8 @@
     @include breakpoint($md) {
       font-size: rem(16px);
       padding: 14px 30px;
+      min-height: 50px;
+      align-self: start;
     }
   }
 }
