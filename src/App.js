@@ -50,7 +50,11 @@ function App() {
       <footer className="footer">
         <ul className="footer__socials">
           <li className="footer__socials-li">
-            <a href="#" className="footer__socials-a">
+            <a
+              href="#"
+              className="footer__socials-a footer__socials-a--facebook"
+              aria-label="See our facebook page"
+            >
               <svg
                 className="footer__socials-svg"
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +65,11 @@ function App() {
             </a>
           </li>
           <li className="footer__socials-li">
-            <a href="#" className="footer__socials-a">
+            <a
+              href="#"
+              className="footer__socials-a footer__socials-a--twitter"
+              aria-label="See our twitter"
+            >
               <svg
                 className="footer__socials-svg"
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +80,11 @@ function App() {
             </a>
           </li>
           <li className="footer__socials-li">
-            <a href="#" className="footer__socials-a">
+            <a
+              href="#"
+              className="footer__socials-a footer__socials-a--instagram"
+              aria-label="See our instagram"
+            >
               <svg
                 className="footer__socials-svg"
                 xmlns="http://www.w3.org/2000/svg"
